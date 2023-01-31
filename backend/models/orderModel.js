@@ -63,7 +63,7 @@ const orderSchema = new mongoose.Schema({
   },
   orderStatus: {
     type: String,
-    default: "processing",
+    default: "Processing",
     required: true,
   },
   deliverdAt: Date,
