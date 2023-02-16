@@ -16,7 +16,7 @@ const {
 } = require("../controller/userController");
 const {
   isAuthenticatedUser,
-  authenticate,
+
   authorzeRoles,
 } = require("../middleware/authentication");
 
