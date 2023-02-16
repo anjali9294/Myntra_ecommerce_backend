@@ -1,5 +1,5 @@
 const express = require("express");
-const passport = require("passport");
+
 const {
   registerUser,
   loginUser,
@@ -19,7 +19,6 @@ const {
   authenticate,
   authorzeRoles,
 } = require("../middleware/authentication");
-const {} = require("../middleware/passport");
 
 const router = express.Router();
 
