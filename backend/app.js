@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
+const path = require("path");
 
 const bodyParser = require("body-parser");
 const fileUpload = require("express-fileupload");
@@ -32,6 +33,11 @@ app.use("/api", user);
 app.use("/api", order);
 app.use("/api", payment);
 
+app.use(express.static(path.join(__dirname, "../frontend/build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
+});
 // middileware for errors
 app.use(middilewareError);
 
