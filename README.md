@@ -1,6 +1,6 @@
 # MERN E-COMMERCE TUTORIAL
 
-Hi! My name is **Anjali Parihar **, I have created this tutorial to Learn MERN Stack.
+Hi! My name is **Anjali Parihar **, I have created this website to Learn MERN Stack.
 
 # Prerequisite
 
