@@ -46,6 +46,8 @@ module.exports.loginUser = catchAsyncErrors(async (req, res, next) => {
   if (!isPasswordMatched) {
     return next(new ErrorHandlar("Invalid Email or Password p", 401));
   }
+  const token = user.getJWTToken();
+  req.headers.authorization = `Bearer ${token}`;
 
   sendToken(user, 200, res);
 });
