@@ -20,7 +20,13 @@ app.use(cookieParser());
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use(fileUpload());
-app.use(cors({ origin: "*", credentials: true }));
+app.use(
+  cors({
+    origin:
+      "https://63f88a03ed3dd477d7f116cd--tangerine-tartufo-d74eaa.netlify.app",
+    credentials: true,
+  })
+);
 // route imports
 const product = require("./routes/productRoute");
 const user = require("./routes/userRoute");
