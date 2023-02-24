@@ -22,7 +22,7 @@ app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use(fileUpload());
 app.use(
   cors({
-    origin: "https://tangerine-tartufo-d74eaa.netlify.app",
+    origin: "https://shop-now.onrender.com",
     credentials: true,
   })
 );
