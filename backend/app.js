@@ -26,8 +26,6 @@ app.use(
     credentials: true,
   })
 );
-
-
 // route imports
 const product = require("./routes/productRoute");
 const user = require("./routes/userRoute");
@@ -39,11 +37,7 @@ app.use("/api", user);
 app.use("/api", order);
 app.use("/api", payment);
 
-// app.use(express.static(path.join(__dirname, "../frontend/build")));
 
-// app.get("*", (req, res) => {
-//   res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
-// });
 // middileware for errors
 app.use(middilewareError);
 
