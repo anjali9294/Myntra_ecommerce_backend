@@ -11,7 +11,6 @@ const sendToken = (user, statusCode, res) => {
     domain: "https://anjishop.me",
     path: "/",
     secure: true,
-    sameSite:'none',
     maxAge: new Date() * 0.001 + 300
   };
 
