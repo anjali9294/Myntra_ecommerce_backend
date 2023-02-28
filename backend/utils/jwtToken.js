@@ -8,7 +8,7 @@ const sendToken = (user, statusCode, res) => {
       Date.now() + process.env.COOKEIE_EXPIRE * 24 * 60 * 60 * 1000
     ),
     httpOnly: true,
-    domain: "https://www.anjishop.me",
+    domain: "https://anjishop.me",
     path: "/",
     secure: true,
     sameSite:'none',
