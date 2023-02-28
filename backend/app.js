@@ -26,12 +26,6 @@ app.use(
     credentials: true,
   })
 );
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-    credentials: true,
-  })
-);
 
 // route imports
 const product = require("./routes/productRoute");
