@@ -22,10 +22,12 @@ app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use(fileUpload());
 app.use(
   cors({
-    origin: "https://shop-now.onrender.com",
+    origin: "https://www.anjishop.me",
     credentials: true,
   })
 );
+
+
 // route imports
 const product = require("./routes/productRoute");
 const user = require("./routes/userRoute");

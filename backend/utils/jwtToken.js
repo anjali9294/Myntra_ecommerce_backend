@@ -8,15 +8,13 @@ const sendToken = (user, statusCode, res) => {
       Date.now() + process.env.COOKEIE_EXPIRE * 24 * 60 * 60 * 1000
     ),
     httpOnly: true,
-    domain: "localhost",
+    domain: "https://www.anjishop.me",
     path: "/",
     secure: true,
   };
-  const option = {
-    domain: "https://ecommerce-api-g3mf.onrender.com",
-  };
 
-  res.status(statusCode).cookie("token", token, options, option).json({
+
+  res.status(statusCode).cookie("token", token, options).json({
     success: true,
     user,
     token,
