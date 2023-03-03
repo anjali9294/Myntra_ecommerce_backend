@@ -42,7 +42,13 @@ app.use("/api", payment);
 // app.get("*", (req, res) => {
 //   res.sendFile(path.resolve(__dirname, "../frontend/public/index.html"));
 // });
+// Serve static files from the public directory
+app.use(express.static(path.join(__dirname, "public")));
 
+// Catch-all route that serves the index.html file
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "public/index.html"));
+});
 // middileware for errors
 app.use(middilewareError);
 
