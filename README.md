@@ -34,6 +34,13 @@ CLOUDINARY_API_KEY
 CLOUDINARY_API_SECRET
 \_fill each filed with your info respectively*
 
+## start Commands
+
+to start the backend use : npm run dev
+to start the frontend use : npm start
+
 ## Author
 
-**LinkedIn** Click [Here](https://www.linkedin.com/in/anjaliparihar/) **@meAnjaliparihar**
+**LinkedIn** Click [Here](https://www.linkedin.com/in/anjaliparihar/)
+
+**website link** Click [Here](https://www.anjishop.me)
